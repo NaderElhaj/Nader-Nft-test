@@ -3,7 +3,7 @@ import Modal from 'components/UI/Modal';
 import View from 'components/UI/View';
 import { useStore } from 'store';
 import useStyle from "./style"
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from '@material-ui/icons/Close';
 import exchanges from "../assets/exchanges.svg"
 import games from "../assets/games.svg"
 import lock from "../assets/lock.svg"

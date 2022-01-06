@@ -1,13 +1,13 @@
 import React from 'react';
 import data from "api/mock/Asset.json"
-import { makeStyles } from '@mui/styles';
-import SearchIcon from '@mui/icons-material/Search';
+import { makeStyles } from '@material-ui/core';
+import SearchIcon from '@material-ui/icons/Search';
 import filter from './assets/filter.svg'
 import IconWrapper from 'components/Header/IconWrapper';
 import defi from "./assets/defi.svg"
 import docu from "./assets/docu.svg"
 import Experience from './Experience'
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import exchange from "./assets/exchange.svg"
 import game from "./assets/game.svg"
 import marketplace from "./assets/marketplace.svg"
@@ -117,7 +117,7 @@ const useStyles = makeStyles({
 
   }
 
-});
+},{index: 1});
 const Home = () => {
   const classes = useStyles();
   const experiences = [

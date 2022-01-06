@@ -11,7 +11,7 @@ import settings from './assets/settings.svg';
 import notification from './assets/notification.svg';
 import logo2x from './assets/home.svg';
 import NavBar from './NavBar';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import clsx from 'clsx';
 import IconWrapper from './IconWrapper';
 import ProfileBlock from './ProfileBlock';

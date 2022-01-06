@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core';
 
 
-export default makeStyles(() => ({
+export default makeStyles({
     experience: {
         display: "flex",
         width: "100%",
@@ -46,4 +46,4 @@ export default makeStyles(() => ({
         "color": "#587BE0"
     }
 
-}));
+},{index: 1});

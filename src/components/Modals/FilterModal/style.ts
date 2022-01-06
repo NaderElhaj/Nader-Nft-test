@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core';
 
 
-export default makeStyles(() => ({
+export default makeStyles({
     modalHeader :{
         display:"flex",
         width:"100%",
@@ -61,4 +61,4 @@ export default makeStyles(() => ({
         height:"35px",
         margin:"5px"
     }
-}));
+},{index: 1});

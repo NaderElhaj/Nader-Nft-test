@@ -1,6 +1,6 @@
 import React from "react"
 import IconWrapper from '../../Header/IconWrapper';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import useStyles from "./style"
 
 const Experience: React.FC<{ name: string, users: string, desc: string, icon: string }> = ({ name, users, desc, icon }) => {

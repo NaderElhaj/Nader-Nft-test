@@ -4,7 +4,7 @@ import { observer } from 'mobx-react-lite';
 import ProfilePopup from 'components/Header/ProfileBlock/ProfilePopup';
 import useStyle from './style';
 import rainbow from '../assets/rainbow.svg';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 const ProfileBlock = () => {
   const classes = useStyle();

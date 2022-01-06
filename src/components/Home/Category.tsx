@@ -1,6 +1,6 @@
 import React from "react"
-import { makeStyles } from '@mui/styles';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { makeStyles } from '@material-ui/core';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import IconWrapper from "components/Header/IconWrapper";
 
 
@@ -33,7 +33,7 @@ const useStyles = makeStyles({
         "color": "rgba(51, 55, 59, 0.7)"
     }
 
-})
+},{index: 1})
 
 const Category: React.FC<{ icon: string, title: string, backgroundColor: string }> = ({ icon, title, backgroundColor }) => {
     const classes = useStyles();

@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from 'components/Home';
 import Header from './components/Header/Header';
 import { GlobalStyles } from 'globalStyles';
-import Footer from 'components/Footer';
 import routes from './routes';
 import ScrollToTop from 'components/ScrollToTop';
 import { ToastContainer } from 'react-toastify';
@@ -26,7 +25,6 @@ function App() {
         <Routes>
           <Route path={routes.home} element={<Home />} />
         </Routes>
-        <Footer />
         <Modals />
         <ToastContainer position="bottom-left" />
       </StoreContext.Provider>
