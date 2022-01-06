@@ -13,7 +13,7 @@ import game from "./assets/game.svg"
 import marketplace from "./assets/marketplace.svg"
 import def from "./assets/def.svg"
 import Category from './Category';
-
+import { useStore } from 'store';
 
 const useStyles = makeStyles({
   experience: {
@@ -162,11 +162,11 @@ const Home = () => {
 
     },
   ]
-
-  console.log({ data })
-
+  const { openModal } = useStore('modalsStore');
   if (!data || data.length === 0) return null;
-
+  const openFilterModal = () =>{
+    openModal('filterModal');
+  }
   return (
     <div className={classes.home}>
       <div className={classes.search}>
@@ -176,7 +176,7 @@ const Home = () => {
             <input type="text" placeholder='Search Experiences' />
           </div>
         </form>
-        <IconWrapper src={filter} width={24} height={24} />
+        <IconWrapper src={filter} width={24} height={24} onClick={openFilterModal} />
       </div>
       <div className={classes.experience}>
         <h1 className={classes.experienceTitle}>Recent Experience</h1>
@@ -184,6 +184,7 @@ const Home = () => {
           <Experience
             name={name}
             desc={desc}
+            key={name}
             users={users}
             icon={icon}
           />
@@ -205,13 +206,13 @@ const Home = () => {
             <Category
               icon={icon}
               title={title}
+              key={title}
               backgroundColor={backgroundColor}
             />
           ))}
         </div>
 
       </div>
-
     </div>
   );
 };

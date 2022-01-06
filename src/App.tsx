@@ -8,6 +8,7 @@ import routes from './routes';
 import ScrollToTop from 'components/ScrollToTop';
 import { ToastContainer } from 'react-toastify';
 import { RootStore, StoreContext } from 'store';
+import Modals from 'components/Modals';
 export const store = new RootStore();
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path={routes.home} element={<Home />} />
         </Routes>
         <Footer />
+        <Modals />
         <ToastContainer position="bottom-left" />
       </StoreContext.Provider>
     </BrowserRouter>
