@@ -35,7 +35,8 @@ const useStyles = makeStyles({
 
   },
   home: {
-    paddingLeft: "16px"
+    paddingLeft: "16px",
+    paddingRight:"30px"
   },
   search: {
     display: "flex",

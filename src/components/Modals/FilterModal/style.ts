@@ -54,6 +54,10 @@ export default makeStyles({
             "fontSize": "16px",
             "lineHeight": "22px",
             "color": "#414047"
+        },
+        "& :hover":{
+            transform:"scale(1.1) ",
+            coloe:"green"
         }
     },
     icon:{
